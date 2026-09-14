@@ -1,0 +1,96 @@
+@import "@fontsource-variable/geist";
+@import "@fontsource-variable/geist-mono";
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: oklch(0.985 0.004 250);
+  --foreground: oklch(0.22 0.012 250);
+  --muted: oklch(0.96 0.006 250);
+  --muted-foreground: oklch(0.5 0.015 250);
+  --accent-ink: oklch(0.42 0.07 195);
+  --border: oklch(0.9 0.008 250);
+  --ring: oklch(0.42 0.07 195);
+}
+
+.dark {
+  --background: oklch(0.18 0.012 250);
+  --foreground: oklch(0.96 0.004 250);
+  --muted: oklch(0.28 0.015 250);
+  --muted-foreground: oklch(0.7 0.015 250);
+  --accent-ink: oklch(0.72 0.07 195);
+  --border: oklch(1 0 0 / 12%);
+  --ring: oklch(0.72 0.07 195);
+}
+
+@theme inline {
+  --font-sans: "Geist Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono Variable", ui-monospace, monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent-ink: var(--accent-ink);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+}
+
+@utility label {
+  @apply font-mono text-[11px] tracking-wider uppercase;
+}
+
+@utility section-heading {
+  @apply label border-b border-border pb-2 text-muted-foreground;
+}
+
+@utility meta {
+  @apply font-mono text-[11px] text-muted-foreground;
+}
+
+@utility microcopy-link {
+  @apply meta tracking-wide inline-flex items-center gap-1 transition-colors;
+}
+
+@utility accent-link {
+  @apply microcopy-link text-accent-ink hover:text-foreground focus-visible:text-foreground;
+}
+
+@utility nav-link {
+  @apply transition-colors hover:text-accent-ink focus-visible:text-accent-ink;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    scrollbar-gutter: stable;
+  }
+
+  body {
+    @apply m-0 min-h-svh bg-background font-sans text-foreground antialiased;
+  }
+
+  a:focus-visible,
+  button:focus-visible {
+    @apply outline-2 outline-offset-2 outline-ring;
+  }
+
+  button,
+  input {
+    font: inherit;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}

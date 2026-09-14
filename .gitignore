@@ -1,0 +1,24 @@
+node_modules/
+
+# Framework and build output
+.tanstack/
+.wrangler/
+dist/
+dist-ssr/
+
+# Test output
+coverage/
+playwright-report/
+test-results/
+
+# Local environment and tool state
+.env
+*.local
+*.tsbuildinfo
+
+# Logs and editor files
+*.log
+.DS_Store
+.idea/
+.vscode/
+.worktrees/

@@ -1,0 +1,5 @@
+# Resume download is a plain one-page PDF
+
+The Resume download is a **PDF**, not HTML or an ATS-oriented artifact. It replaces the former public ATS HTML file. The download is for human attach/print: same catalog Resume facts as the on-site page, in a plain one-column, one-page presentation — not Craft Logbook styling and not a second narrative. The control is **Download PDF**; the saved filename is from Identity (`Shayan - Product Engineer.pdf`); the public path stays stable (`/resume/download.pdf`) so the display name is not baked into the URL. The PDF is generated from a private plain template (catalog → print) and committed under `public/`; check fails if regenerating would change the file.
+
+**Why PDF over HTML:** recruiters and hiring managers expect a PDF attachment; plain HTML as a download was ATS-shaped and weaker as the primary share artifact. **Why not keep both:** one download, one filename story, no competing formats. **Why not name-in-URL or multi-page:** Identity/filename can change without breaking the path; overflow is a content problem, not a second page.

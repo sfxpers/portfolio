@@ -1,0 +1,4 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "ignorePatterns": [".agents/**", "src/routeTree.gen.ts", "public/resume/download.pdf"]
+}
