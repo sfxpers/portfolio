@@ -7,4 +7,14 @@
   "observability": {
     "enabled": true,
   },
+  "routes": [
+    {
+      "pattern": "shayanameen.work",
+      "custom_domain": true,
+    },
+    {
+      "pattern": "www.shayanameen.work",
+      "custom_domain": true,
+    },
+  ],
 }
