@@ -49,15 +49,15 @@
   "devEngines": {
     "packageManager": {
       "name": "nub",
-      "version": "^0.7.5",
+      "version": "^0.9.3",
       "onFail": "ignore"
     }
   },
   "engines": {
     "node": ">=24 <25"
   },
-  "packageManager": "nub@0.7.5",
-  "allowBuilds": {
+  "packageManager": "nub@0.9.3",
+  "allowScripts": {
     "esbuild": true,
     "lightningcss": true,
     "sharp": true,

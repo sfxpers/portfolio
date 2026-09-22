@@ -1,6 +1,6 @@
 [tools]
-node = "24.19.0"
-nub = "0.7.5"
+node = "24.21.0"
+nub = "0.9.3"
 
 [tasks.setup]
 description = "Install locked dependencies and Chromium/WebKit for Playwright"
