@@ -67,7 +67,7 @@ export function getResumeView(): ResumeView {
         title: project.title,
         summary: project.summary,
         href: `/work/${project.slug}`,
-        linkLabel: "View case study →",
+        linkLabel: "View",
       })),
     },
     {

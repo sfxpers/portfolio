@@ -131,7 +131,7 @@ const experience: Experience[] = [
     title: "Product Engineer",
     organization: "Ars Futura",
     location: "Remote, Zagreb, Croatia",
-    dates: "Dec 2025 to Present",
+    dates: "Jan 2025 to Jul 2026",
     bullets: [
       "I build and ship features on long-running client products, across the interface, the API behind it, and the release.",
       "I work inside client teams alongside their design and product people, on new builds and on codebases that arrive with history.",

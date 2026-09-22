@@ -8,7 +8,7 @@ Every user-facing string in the Catalog — Identity bio, Experience bullets, Ca
 4. **Concrete nouns over abstract ones.** Avoid boundary, surface (as a noun), product system, operational workflow, inspectable, authorship, and governance unless the word is literally in the product's UI. Watch for `own`/`owning` doing work a specific verb should do.
 5. **Real numbers beat descriptions of scope.** Fees, windows, thresholds, and quantities are visible in the Showcase artifacts; use them.
 6. **Captions add information.** A caption says something the body does not, grounded in what is actually visible in the artifact. Vary how they open; they should not all be "The [thing] [verb]ed [list]."
-7. **Sentence case in UI copy.** The UI says "View case study".
+7. **Sentence case in UI copy.** The UI says "View".
 8. **One positioning claim.** Meta descriptions vary only as much as each page needs, rather than becoming three different noun lists for the same sentence.
 9. **The Case Studies are a selection, not a survey.** Two or three deep pages are what the site shows; they are not the whole body of work and they do not define the kind of work on offer. Identity and positioning copy describes the sort of problem being solved, never a domain generalised from whichever studies happen to be published. Avoid "most of my work is X", "building X", or any count that reads as a complete inventory.
 
